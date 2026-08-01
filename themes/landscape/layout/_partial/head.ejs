@@ -33,7 +33,13 @@
   <% if (config.highlight.enable){ %>
     <%- css('https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css') %>
   <% } %>
+
+  <!-- ⭐ Add your portfolio fonts HERE -->
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Theme CSS loads AFTER fonts -->
   <%- css('css/style') %>
+
   <% if (theme.fancybox){ %>
     <%- css('fancybox/jquery.fancybox.min.css') %>
   <% } %>
