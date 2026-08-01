@@ -5,7 +5,7 @@
 
 global-reset()
 
-
+ /* === =========================== === */
 
 .back-btn
   display inline-block
@@ -29,7 +29,57 @@ h1, h2, h3, h4
   letter-spacing 1px
   margin-bottom 1rem
 
-  
+  /* === Post Card Styling === */
+
+.post
+  background white
+  padding 2rem
+  border-radius 16px
+  box-shadow 0 4px 20px rgba(0,0,0,0.08)
+  margin-bottom 2rem
+  transition transform 0.2s ease, box-shadow 0.2s ease
+
+.post:hover
+  transform scale(1.02)
+  box-shadow 0 6px 24px rgba(0,0,0,0.12)
+
+  /* === Index Cards === */
+
+.post-card
+  background white
+  padding 1.5rem
+  border-radius 16px
+  box-shadow 0 4px 20px rgba(0,0,0,0.08)
+  margin-bottom 2rem
+  transition transform 0.2s ease
+
+.post-card:hover
+  transform scale(1.02)
+
+  /* === Link Hover Animation === */
+
+a
+  color #000
+  font-weight 600
+  transition letter-spacing 0.2s ease, color 0.2s ease
+
+a:hover
+  letter-spacing 1px
+  color var(--accent)
+
+.back-btn
+  display inline-block
+  margin-top 1rem
+  font-family 'Staatliches', sans-serif
+  font-size 1.2rem
+  color var(--accent)
+  transition letter-spacing 0.2s ease
+
+.back-btn:hover
+  letter-spacing 1px
+
+
+ /* === =========================== === */
 
 input, button
   margin: 0
