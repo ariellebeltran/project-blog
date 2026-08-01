@@ -1,7 +1,7 @@
 ---
 title: My First Post!
 date: 2026-07-30 20:38:28
-tags: [Web Dev]
+tags: [WebDev]
 excerpt: "A quick update on making a blog post in Vercel."
 ---
 
