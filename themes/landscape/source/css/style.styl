@@ -20,7 +20,7 @@ global-reset()
 
 body
   font-family 'Poppins', sans-serif
-  background #fafafa
+  
   color #222
   line-height 1.6
 
@@ -48,7 +48,7 @@ h1, h2, h3, h4
 .post-card
   background white
   padding 1.5rem
-  border-radius 16px
+  border-radius 10px
   box-shadow 0 4px 20px rgba(0,0,0,0.08)
   margin-top 2rem
   transition transform 0.2s ease
@@ -80,7 +80,16 @@ a:hover
   letter-spacing 1px
 
 .widget
-  border-radius 10px
+  border-radius none !important
+  border none !important
+
+.widget ul
+
+  li::marker
+    content "\\25BA " // Double backslash prevents Stylus from stripping it
+    color #007bff      // Optional: set your arrow color
+    font-size 0.9rem   // Optional: adjust the size
+
  /* === =========================== === */
 
 input, button
