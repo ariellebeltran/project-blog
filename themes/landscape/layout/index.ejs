@@ -1,8 +1,6 @@
 <% 
-  // Convert posts to array and sort newest → oldest
-  var posts = page.posts.toArray().sort(function(a, b) {
-    return b.date - a.date;
-  });
+  // Get all posts from the site (newest → oldest)
+  var posts = site.posts.sort('-date');
 %>
 
 <% posts.forEach(function(post){ %>
@@ -16,5 +14,3 @@
     </div>
   </article>
 <% }) %>
-
-<%- partial('pagination') %>
